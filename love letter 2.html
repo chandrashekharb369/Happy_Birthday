@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Happy Birthday Pandu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/love letter 2.css" />
+  </head>
+  <body>
+    <!-- tiktok meowish -->
+    <div class="envlope-wrapper">
+      <div id="envelope" class="close">
+        <div class="front flap"></div>
+        <div class="front pocket"></div>
+        <div class="letter">
+        <div class="words line1">To: My dearest Saisree/Pandu,</div>
+          <div class="words line2">Happy birthday, my love. On your special day,</div>
+          <div class="words line3">I just want you to know how proud I am of you,</div>
+          <div class="words line4">and how much I believe in every dream you have.</div>
+          <div class="words line4">May you reach your goals faster than you ever imagined,</div>
+          <div class="words line4">and may your mom’s wishes for you come true one by one.</div>
+          <div class="words line4">I’ll always be here, cheering for you, loving you,</div>
+          <div class="words line4">With all my heart, happy birthday, Saisree. 💖</div>
+        </div>
+        <div class="hearts">
+          <div class="heart a1"></div>
+          <div class="heart a2"></div>
+          <div class="heart a3"></div>
+        </div>
+      </div>
+    </div>
+    <div class="reset">
+      <button id="open">Open</button>
+      <button id="nextLove" type="button">Next</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/love letter 2.js"></script>
+    <script>
+      // Navigate to the final page when clicking Next
+      document.addEventListener('DOMContentLoaded', function () {
+        var nextBtn = document.getElementById('nextLove');
+        if (!nextBtn) return;
+        nextBtn.addEventListener('click', function () {
+          window.location.href = 'do_you_love_me.html';
+        });
+      });
+    </script>
+  </body>
+</html>
